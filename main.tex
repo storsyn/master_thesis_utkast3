@@ -1,0 +1,64 @@
+\documentclass[12pt]{report}
+
+% includes
+\usepackage{geometry}           % page size
+\usepackage[utf8]{inputenc}     % encoding
+\usepackage{palatino}           % font
+\usepackage{graphicx}           % images
+\usepackage{indentfirst}        % indentation
+\usepackage[nottoc]{tocbibind}  % table of contents style
+\usepackage[unicode]{hyperref}  % references from the table of contents
+\usepackage{pifont}
+\usepackage{amssymb}
+\usepackage[dvipsnames]{xcolor}
+
+%\usepackage[colorlinks]{hyperref}
+
+% includes options
+\geometry{  a4paper,            % scientific thesis standard
+            left=3cm,
+            right=2cm,
+            top=2cm,
+            bottom=2cm,
+ }
+\graphicspath{{images/}}        % path where the images are located
+\setlength{\parindent}{1cm}     % paragraph indentation
+
+% other options
+\linespread{1.5}                % space between lines
+
+% the document content
+\begin{document}
+    % macros (global)
+    \input{front/macros}
+    
+    % front-matter
+    \pagenumbering{gobble}
+    
+    \input{front/cover}
+    \input{front/declaration}
+    
+    \include{front/abstract}
+    
+    % table of contents
+    \tableofcontents
+    
+    \setcounter{page}{1}
+    \pagenumbering{arabic}
+    
+    
+    % chapters
+    \input{chapters/motivation}
+    \input{chapters/introduction}
+    \input{chapters/related_work}
+    \input{chapters/research_method}
+    \input{chapters/nudge_design}
+    %\input{chapters/experimental_design}
+    \input{chapters/findings_results}
+    \input{chapters/discussion}
+    \input{chapters/conclusions}
+    \input{chapters/appendix}
+    
+    \bibliographystyle{plain}
+	\bibliography{references}
+\end{document}
