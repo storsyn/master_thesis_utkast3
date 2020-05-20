@@ -16,16 +16,24 @@ This method consist of three phases: analysing, designing and evaluation. the la
 Due to the scope of this master thesis / research, timing and frequency, has not been deeply/widely considered when designing these digital nudges.  That is to say, there was chosen three different times during a day and , during one month the participants were supposed to receive 16 nudges in total. Randomly distributed during the 30 days trial.  
 
 \subsection{Health information}
-The health information that was presented through the digital nudges was taken from Helsedirektoratet and FHI, who currently has the leading role of informing (but also motivating?) norwegian residents about physical activity.
+The health information that was presented through the digital nudges was taken from Helsedirektoratet and FHI, who currently has the leading role of informing (but also motivating?) Norwegian residents about physical activity.
+
+Henger også sammen med at lack of knowledge er en grunn til barriere??
 
 \subsection{Randomization and broadcast plan}
 16 distinct nudges was randomly distributed over a period of 30 days. As timing was not primary investigation point, randomized, but still within convenient time frames (morning 08-10, noon 12-15, evening 18-20). 
 
 \subsection{Technical implementation}
-Sats har selv utviklet et CMS (content management system) (?) for publisering av 
+Sats har utviklet et eget CMS (content management system) (?) for publisering av nudger gjennom appen.
+Sats has developed their own CMS (content management system) for publishing nudges through their app. The nudge is delivered as a push notification on users locked home screen, meaning that there is a connection between X and the operating system. 
 
+Google Firebase provides cloud messaging, which sends notifications and messages to any device (iOS, Android or web based). 
+Google Firebase communicates with Device ID (smartphone) 
+"Vår serviceplattform"
+Operativsystemet på deltakernes enhet 
+Google Firebase ble brukt 
+Firebase cloud messaging 
 
-
-"Selve push meldingen (den som operativsystemet gir bruker, og lever på utsiden av appen); Her bruker vi Google Firebase for å kommunisere med telefonen. Den tar utgangspunkt i Device ID (telefonen) og pusher til Device ID eller IDer (om brukeren er registert med flere devicer). Dette oppfattes som selve push-meldingen. Det er vår serviceplattform som kommuniserer med Google Firebase (og CMSet du kjenner til er det som pusher informasjon inn til vår service plattform). Vår service plattform er forresten ren Microsoft Azure."
+%"Selve push meldingen (den som operativsystemet gir bruker, og lever på utsiden av appen); Her bruker vi Google Firebase for å kommunisere med telefonen. Den tar utgangspunkt i Device ID (telefonen) og pusher til Device ID eller IDer (om brukeren er registert med flere devicer). Dette oppfattes som selve push-meldingen. Det er vår serviceplattform som kommuniserer med Google Firebase (og CMSet du kjenner til er det som pusher informasjon inn til vår service plattform). Vår service plattform er forresten ren Microsoft Azure."
 
 
